@@ -5,6 +5,7 @@ install:
   - git clone --depth 1 https://github.com/LibRaw/LibRaw.git
   - git clone --depth 1 https://github.com/LibRaw/LibRaw-demosaic-pack-GPL2.git
   - git clone --depth 1 https://github.com/LibRaw/LibRaw-demosaic-pack-GPL3.git
+  - git submodule update --init --recursive
   - xcopy LibRaw-cmake LibRaw /e/h/y/q
   - xcopy LibRaw-demosaic-pack-GPL2 LibRaw /e/h/y/q
   - xcopy LibRaw-demosaic-pack-GPL3 LibRaw /e/h/y/q
