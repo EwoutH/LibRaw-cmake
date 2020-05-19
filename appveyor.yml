@@ -11,7 +11,7 @@ install:
   - xcopy LibRaw-demosaic-pack-GPL3 LibRaw /e/h/y/q
   - cd LibRaw
   - git submodule update --init --recursive
-  - cmake . -DENABLE_DEMOSAIC_PACK_GPL2=ON -DENABLE_DEMOSAIC_PACK_GPL3=ON
+  - cmake . -A ARM64 -DENABLE_DEMOSAIC_PACK_GPL2=ON -DENABLE_DEMOSAIC_PACK_GPL3=ON
   - copy libraw.sln C:\projects\LibRaw-cmake
 
 build: off
