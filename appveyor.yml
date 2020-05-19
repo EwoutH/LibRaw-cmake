@@ -1,5 +1,5 @@
 image: Visual Studio 2019
-Platform: "Any CPU"
+Configuration: Release
 
 install:
   - git submodule update --init --recursive
@@ -15,7 +15,8 @@ install:
   - cmake . -DENABLE_DEMOSAIC_PACK_GPL2=ON -DENABLE_DEMOSAIC_PACK_GPL3=ON
   - copy libraw.sln C:\projects\LibRaw-cmake
 
-build: off
+build:
+ - project: libraw.sln
 
 artifacts:
  - path: libraw.sln
