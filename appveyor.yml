@@ -16,5 +16,5 @@ install:
 build: off
 
 artifacts:
- - path: C:/projects/LibRaw/LibRaw.sln
- - path: C:/projects/LibRaw/**/LibRaw.sln
+ - path: ../LibRaw/LibRaw.sln
+ - path: ../LibRaw/**/LibRaw.sln
