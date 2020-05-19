@@ -16,7 +16,7 @@ install:
   - copy libraw.sln C:\projects\LibRaw-cmake
 
 build:
- - project: libraw.sln
+ project: libraw.sln
 
 artifacts:
  - path: libraw.sln
