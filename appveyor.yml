@@ -11,6 +11,8 @@ install:
   - cd LibRaw
   - cmake . -DENABLE_DEMOSAIC_PACK_GPL2=ON -DENABLE_DEMOSAIC_PACK_GPL3=ON
 
+build: skip
+
 artifacts:
  - path: LibRaw.sln
  - path: /**/LibRaw.sln
